@@ -1,0 +1,23 @@
+uuid: d74f5ad6-4665-4da7-8dda-265a03345a10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.recipe
+  module:
+    - text
+_core:
+  default_config_hash: w6F7yAQYNfF4z90zpYKAhXLoWqN9Xot8T0_HSbu2v3w
+id: node.recipe.field_summary
+field_name: field_summary
+entity_type: node
+bundle: recipe
+label: Summary
+description: 'Provide a short overview of this recipe.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

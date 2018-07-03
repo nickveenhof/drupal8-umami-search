@@ -1,0 +1,32 @@
+uuid: 7afa9f48-e089-4606-8f75-9d4bcc6e8f81
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.disclaimer_block
+    - field.field.block_content.disclaimer_block.field_copyright
+    - field.field.block_content.disclaimer_block.field_disclaimer
+  module:
+    - text
+_core:
+  default_config_hash: JGfJhp1GQ95jeCKChKVTLBjB593GRjSrlYtt9KZM79Q
+id: block_content.disclaimer_block.default
+targetEntityType: block_content
+bundle: disclaimer_block
+mode: default
+content:
+  field_copyright:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_disclaimer:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

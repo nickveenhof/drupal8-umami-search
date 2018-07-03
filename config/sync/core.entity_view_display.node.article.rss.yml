@@ -1,0 +1,26 @@
+uuid: d2456a78-ffe7-4b2a-b9fb-d93ad6d0a193
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.article.body
+    - field.field.node.article.field_image
+    - field.field.node.article.field_tags
+    - node.type.article
+  module:
+    - user
+_core:
+  default_config_hash: GYW9Cm6x0sx_vViy6aXF8DX2klsMoMNT_9n9vqFE2JA
+id: node.article.rss
+targetEntityType: node
+bundle: article
+mode: rss
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_image: true
+  field_tags: true

@@ -1,0 +1,17 @@
+uuid: b4e4f8b6-18eb-4a06-8928-7b75cbce04d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: mysql_search_service
+name: 'Mysql Search Service'
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  partial_matches: false
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true

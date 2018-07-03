@@ -1,0 +1,228 @@
+uuid: 993b7e24-da03-48af-8e3c-2e348f9dad9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_difficulty
+    - field.storage.node.field_ingredients
+    - field.storage.node.field_number_of_servings
+    - field.storage.node.field_preparation_time
+    - field.storage.node.field_recipe_category
+    - field.storage.node.field_recipe_instruction
+    - field.storage.node.field_tags
+    - search_api.server.mysql_search_service
+    - core.entity_view_mode.node.full
+  module:
+    - search_api
+    - node
+id: umami_search_index
+name: 'Umami Search Index'
+description: ''
+read_only: false
+field_settings:
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          article: full
+          page: default
+          recipe: full
+  field_difficulty:
+    label: Difficulty
+    datasource_id: 'entity:node'
+    property_path: field_difficulty
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_difficulty
+  field_ingredients:
+    label: Ingredients
+    datasource_id: 'entity:node'
+    property_path: field_ingredients
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_ingredients
+  field_number_of_servings:
+    label: 'Number of servings'
+    datasource_id: 'entity:node'
+    property_path: field_number_of_servings
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_number_of_servings
+  field_preparation_time:
+    label: 'Preparation time'
+    datasource_id: 'entity:node'
+    property_path: field_preparation_time
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_preparation_time
+  field_recipe_category:
+    label: 'Recipe category'
+    datasource_id: 'entity:node'
+    property_path: field_recipe_category
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_recipe_category
+  processed:
+    label: 'Recipe instruction » Processed text'
+    datasource_id: 'entity:node'
+    property_path: 'field_recipe_instruction:processed'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_recipe_instruction
+  field_tags:
+    label: Tags
+    datasource_id: 'entity:node'
+    property_path: field_tags
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  stemmer:
+    all_fields: true
+    fields:
+      - rendered_item
+    exceptions: {  }
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
+  rendered_item: {  }
+  add_url: {  }
+  aggregated_field: {  }
+  highlight:
+    highlight: always
+    highlight_partial: false
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  tokenizer:
+    all_fields: true
+    fields:
+      - rendered_item
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
+  stopwords:
+    all_fields: true
+    fields:
+      - rendered_item
+    stopwords:
+      - a
+      - an
+      - and
+      - are
+      - as
+      - at
+      - be
+      - but
+      - by
+      - for
+      - if
+      - in
+      - into
+      - is
+      - it
+      - 'no'
+      - not
+      - of
+      - 'on'
+      - or
+      - s
+      - such
+      - t
+      - that
+      - the
+      - their
+      - then
+      - there
+      - these
+      - they
+      - this
+      - to
+      - was
+      - will
+      - with
+    weights:
+      preprocess_index: -5
+      preprocess_query: -2
+  ignorecase:
+    all_fields: true
+    fields:
+      - rendered_item
+      - field_difficulty
+      - field_ingredients
+      - processed
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  transliteration:
+    all_fields: true
+    fields:
+      - rendered_item
+      - field_difficulty
+      - field_ingredients
+      - processed
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  html_filter:
+    all_fields: true
+    fields:
+      - rendered_item
+      - field_difficulty
+      - field_ingredients
+      - processed
+    title: true
+    alt: true
+    tags:
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      b: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  type_boost:
+    boosts:
+      'entity:node':
+        datasource_boost: !!float 1
+        bundle_boosts:
+          article: !!float 0
+          page: !!float 0
+          recipe: !!float 1
+    weights:
+      preprocess_index: 0
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: mysql_search_service

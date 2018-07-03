@@ -1,0 +1,16 @@
+uuid: b32812e0-346f-455d-8c35-1372e444b3e0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: WuoUdPuuPKUYB4xYo2UDq0h7J7jej9jh_0SXmzikq28
+name: small_21_9
+label: 'Small 21:9 (768x330)'
+effects:
+  06eaf095-124b-435d-af50-442044e91e7d:
+    uuid: 06eaf095-124b-435d-af50-442044e91e7d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 768
+      height: 330

@@ -1,0 +1,16 @@
+uuid: e7fe9762-49aa-4c98-9f83-085add33a7a1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rhV9t_ITVdNS2AGLcD8c71qLKimq7pq1WjKP7wS1gB0
+name: medium_3_2_2x
+label: 'Medium 3:2 2x (1200x800)'
+effects:
+  4d5a2dc6-8ec0-4a7e-95bb-dd19e8ed248a:
+    uuid: 4d5a2dc6-8ec0-4a7e-95bb-dd19e8ed248a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 800

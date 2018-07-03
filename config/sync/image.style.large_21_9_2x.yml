@@ -1,0 +1,16 @@
+uuid: db2b1c05-9299-4b25-a1af-3b7860c8514c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rYmMm3pFTW9OvR4JVDIah4DCdG-FQ3di9ReVzB9Y3HE
+name: large_21_9_2x
+label: 'Large 21:9 2x (2880x1240)'
+effects:
+  6b96b7e5-aabd-406e-86ec-2c2e2c18bd82:
+    uuid: 6b96b7e5-aabd-406e-86ec-2c2e2c18bd82
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 2880
+      height: 1240

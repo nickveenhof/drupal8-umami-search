@@ -1,0 +1,11 @@
+uuid: a33a7972-93c4-440e-a223-e11d928f4839
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sSecjDjkP5AUQfLykFLCuTgzVh1SpvpB2sijl1uS7OM
+name: 'Recipe cuisine'
+vid: recipe_cuisine
+description: ''
+hierarchy: 0
+weight: 0

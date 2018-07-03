@@ -1,0 +1,32 @@
+uuid: f72876ba-a6eb-424f-a33d-182059a77b6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - file
+    - image
+_core:
+  default_config_hash: KYPjbkIWmJLcT0h381VL8Y4tCR01BeI70iDb438OdX4
+id: block_content.field_banner_image
+field_name: field_banner_image
+entity_type: block_content
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

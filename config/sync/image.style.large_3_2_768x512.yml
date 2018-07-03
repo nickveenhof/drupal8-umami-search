@@ -1,0 +1,16 @@
+uuid: 35c2f91e-3884-4b7d-b400-fd2877fa3ddf
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Os5xrYsdfOdWGGsk0hkItQy1iNTgOcwQvTBgE-sdMxo
+name: large_3_2_768x512
+label: 'Large 3:2 (768x512)'
+effects:
+  36c9f14a-8f5e-4794-92ea-bffab074f52e:
+    uuid: 36c9f14a-8f5e-4794-92ea-bffab074f52e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 768
+      height: 512

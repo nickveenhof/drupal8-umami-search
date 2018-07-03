@@ -1,0 +1,23 @@
+uuid: c8b3cb6d-9cb1-4f7e-bb3f-b877d5acc7c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search
+  module:
+    - views
+  theme:
+    - umami_search
+id: umami_search_exposedformsearchpage_1
+theme: umami_search
+region: header
+weight: -5
+provider: null
+plugin: 'views_exposed_filter_block:search-page_1'
+settings:
+  id: 'views_exposed_filter_block:search-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility: {  }
