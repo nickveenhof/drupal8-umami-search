@@ -1,0 +1,20 @@
+name: Umami Search
+type: theme
+base theme: umami
+description: 'The theme used for the Drupal Search demonstration site.'
+version: VERSION
+core: 8.x
+
+regions:
+  header: Header
+  highlighted: Highlighted
+  tabs: Tabs
+  banner_top: 'Banner Top'
+  breadcrumbs: Breadcrumbs
+  page_title: 'Page Title'
+  content: Content
+  sidebar: Sidebar
+  footer: Footer
+  bottom: Bottom
+  page_top: 'Page top' # Needed by Drupal Core
+  page_bottom: 'Page bottom' # Needed by Drupal Core
