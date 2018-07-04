@@ -29,7 +29,7 @@ expand_hierarchy: false
 enable_parent_when_child_gets_disabled: true
 hard_limit: 0
 exclude: false
-only_visible_when_facet_source_is_visible: false
+only_visible_when_facet_source_is_visible: true
 processor_configs:
   active_widget_order:
     processor_id: active_widget_order
@@ -56,6 +56,4 @@ processor_configs:
       build: 15
     settings: {  }
 empty_behavior:
-  behavior: text
-  text_format: plain_text
-  text: Test
+  behavior: none
