@@ -1,0 +1,22 @@
+uuid: d0249073-d339-4936-bc61-42ed1d39c42d
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.difficulty
+  module:
+    - facets
+  theme:
+    - umami_search
+id: difficulty
+theme: umami_search
+region: sidebar
+weight: -5
+provider: null
+plugin: 'facet_block:difficulty'
+settings:
+  id: 'facet_block:difficulty'
+  label: Difficulty
+  provider: facets
+  label_display: visible
+visibility: {  }

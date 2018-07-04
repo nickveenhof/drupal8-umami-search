@@ -1,6 +1,6 @@
 uuid: b11da492-3edf-4138-8eb0-5ed18be0aca3
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:disclaimer_block:9b4dcd67-99f3-48d0-93c9-2c46648b29de'
@@ -15,8 +15,8 @@ _core:
   default_config_hash: TeOIzk3V4EhipVpBRgjtyn1BkWloX9v1gYju2zgBx80
 id: umami_search_disclaimer
 theme: umami_search
-region: bottom
-weight: 10
+region: header
+weight: 6
 provider: null
 plugin: 'block_content:9b4dcd67-99f3-48d0-93c9-2c46648b29de'
 settings:

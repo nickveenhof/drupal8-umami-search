@@ -1,0 +1,22 @@
+uuid: 2b51e2bb-4697-45d9-b954-fcdf75f58c59
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.number_of_servings
+  module:
+    - facets
+  theme:
+    - umami_search
+id: numberofservings
+theme: umami_search
+region: sidebar
+weight: -7
+provider: null
+plugin: 'facet_block:number_of_servings'
+settings:
+  id: 'facet_block:number_of_servings'
+  label: 'Number of servings'
+  provider: facets
+  label_display: visible
+visibility: {  }

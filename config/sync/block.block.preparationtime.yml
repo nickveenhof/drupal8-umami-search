@@ -1,0 +1,22 @@
+uuid: bb7fa112-664a-481a-83f8-f1638271db11
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.preparation_time
+  module:
+    - facets
+  theme:
+    - umami_search
+id: preparationtime
+theme: umami_search
+region: sidebar
+weight: -8
+provider: null
+plugin: 'facet_block:preparation_time'
+settings:
+  id: 'facet_block:preparation_time'
+  label: 'Preparation time'
+  provider: facets
+  label_display: visible
+visibility: {  }

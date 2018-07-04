@@ -72,6 +72,11 @@
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/{$name}": ["type:drupal-drush"]
         },
+        "patches": {
+            "drupal/core": {
+                "Umami Region Fix for bigpipe to work as expected with facets": "https://www.drupal.org/files/issues/2018-06-06/umami_page_filter-2937640-12.patch"
+            }
+        },
         "drupal-scaffold": {
             "initial": {
                 ".editorconfig": "../.editorconfig",

@@ -7,10 +7,10 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - image.style.thumbnail
     - node.type.article
-    - responsive_image.styles.narrow
   module:
-    - responsive_image
+    - image
     - text
     - user
 _core:
@@ -21,19 +21,19 @@ bundle: article
 mode: search_result
 content:
   body:
-    type: text_summary_or_trimmed
+    type: text_trimmed
     weight: 2
     region: content
     settings:
-      trim_length: 600
+      trim_length: 200
     third_party_settings: {  }
     label: hidden
   field_image:
-    type: responsive_image
+    type: image
     weight: 1
     region: content
     settings:
-      responsive_image_style: narrow
+      image_style: thumbnail
       image_link: ''
     third_party_settings: {  }
     label: hidden

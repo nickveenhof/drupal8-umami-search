@@ -1,0 +1,69 @@
+uuid: 9b4e0bdd-fed3-448d-9bb6-6f55087db5bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.umami_search_index
+    - views.view.search
+  module:
+    - search_api
+id: preparation_time
+name: 'Preparation time'
+url_alias: preparation_time
+weight: 0
+min_count: 1
+show_only_one_result: true
+field_identifier: field_preparation_time
+facet_source_id: 'search_api:views_page__search__page_1'
+widget:
+  type: range_slider
+  config:
+    show_numbers: false
+    prefix: ''
+    suffix: ''
+    min_type: search_result
+    min_value: !!float 0
+    max_type: search_result
+    max_value: !!float 10
+    step: !!float 1
+query_operator: or
+use_hierarchy: false
+expand_hierarchy: false
+enable_parent_when_child_gets_disabled: true
+hard_limit: 0
+exclude: false
+only_visible_when_facet_source_is_visible: true
+processor_configs:
+  active_widget_order:
+    processor_id: active_widget_order
+    weights:
+      sort: 20
+    settings:
+      sort: DESC
+  count_widget_order:
+    processor_id: count_widget_order
+    weights:
+      sort: 30
+    settings:
+      sort: DESC
+  display_value_widget_order:
+    processor_id: display_value_widget_order
+    weights:
+      sort: 40
+    settings:
+      sort: ASC
+  range_slider:
+    processor_id: range_slider
+    weights:
+      pre_query: -9
+      post_query: 5
+      build: -7
+    settings: {  }
+  url_processor_handler:
+    processor_id: url_processor_handler
+    weights:
+      pre_query: -10
+      build: -8
+    settings: {  }
+empty_behavior:
+  behavior: none

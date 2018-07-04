@@ -1,6 +1,6 @@
 uuid: 5fc7ab0b-85a7-4691-b10f-2f4a145274eb
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.promoted_items
@@ -13,8 +13,8 @@ _core:
   default_config_hash: uWQGOk9Ixx43OouU7FULa6INwOwa4lT7Ap5rN7LnxKI
 id: umami_search_views_block__promoted_items_block_1
 theme: umami_search
-region: banner_top
-weight: -6
+region: header
+weight: -2
 provider: null
 plugin: 'views_block:promoted_items-block_1'
 settings:
