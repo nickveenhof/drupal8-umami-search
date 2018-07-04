@@ -11,7 +11,7 @@ dependencies:
 id: numberofservings
 theme: umami_search
 region: sidebar
-weight: -6
+weight: -5
 provider: null
 plugin: 'facet_block:number_of_servings'
 settings:

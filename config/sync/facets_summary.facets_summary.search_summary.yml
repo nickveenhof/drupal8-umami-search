@@ -1,0 +1,54 @@
+uuid: b7a343d3-b03f-488b-8e29-c9dbf98fb71d
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.umami_search_index
+    - views.view.search
+  module:
+    - search_api
+id: search_summary
+name: 'Search Summary'
+facets:
+  difficulty:
+    checked: true
+    label: Difficulty
+    separator: ', '
+    show_count: true
+    weight: 0
+  ingredients:
+    checked: true
+    label: Ingredients
+    separator: ', '
+    show_count: true
+    weight: 0
+  recipe_category:
+    checked: true
+    label: 'Recipe category'
+    separator: ', '
+    show_count: true
+    weight: 0
+  tags:
+    checked: true
+    label: Tags
+    separator: ', '
+    show_count: true
+    weight: 0
+facet_source_id: 'search_api:views_page__search__page_1'
+processor_configs:
+  hide_when_not_rendered:
+    processor_id: hide_when_not_rendered
+    weights:
+      build: '10'
+    settings: {  }
+  reset_facets:
+    processor_id: reset_facets
+    weights:
+      build: '50'
+    settings:
+      link_text: 'Clear my filters'
+  show_count:
+    processor_id: show_count
+    weights:
+      build: '50'
+    settings: {  }

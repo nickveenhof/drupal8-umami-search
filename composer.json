@@ -24,6 +24,7 @@
         "drupal/core": "~8.5.3",
         "drupal/devel": "^1.2",
         "drupal/facets": "^1.0",
+        "drupal/facets_pretty_paths": "^1.0@beta",
         "drupal/search_api": "^1.8",
         "drupal/search_api_autocomplete": "^1.0",
         "drupal/search_api_solr": "^2.0",

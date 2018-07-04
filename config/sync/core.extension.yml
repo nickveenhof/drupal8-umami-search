@@ -9,6 +9,7 @@ module:
   config: 0
   contact: 0
   contextual: 0
+  ctools: 0
   datetime: 0
   dblog: 0
   demo_umami_content: 0
@@ -16,6 +17,7 @@ module:
   dynamic_page_cache: 0
   editor: 0
   facets: 0
+  facets_pretty_paths: 0
   facets_range_widget: 0
   facets_summary: 0
   field: 0
@@ -41,11 +43,13 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
   user: 0
   views_ui: 0
   menu_link_content: 1
+  pathauto: 1
   views: 10
   demo_umami: 1000
 theme:

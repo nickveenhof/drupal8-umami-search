@@ -11,7 +11,7 @@ dependencies:
 id: preparationtime
 theme: umami_search
 region: sidebar
-weight: -7
+weight: -6
 provider: null
 plugin: 'facet_block:preparation_time'
 settings:
