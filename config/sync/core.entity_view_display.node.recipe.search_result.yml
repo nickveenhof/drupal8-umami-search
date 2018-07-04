@@ -15,11 +15,10 @@ dependencies:
     - field.field.node.recipe.field_recipe_instruction
     - field.field.node.recipe.field_summary
     - field.field.node.recipe.field_tags
-    - image.style.square_small
+    - image.style.thumbnail
     - node.type.recipe
   module:
     - image
-    - text
     - user
 _core:
   default_config_hash: py84jFo-01t9uXD4iSM-KqDdxA7K2JDp4HnAEsBCUUs
@@ -29,21 +28,13 @@ bundle: recipe
 mode: search_result
 content:
   field_image:
-    weight: 2
-    label: hidden
-    settings:
-      image_style: square_small
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
-  field_summary:
     weight: 1
     label: hidden
     settings:
-      trim_length: 200
+      image_style: thumbnail
+      image_link: ''
     third_party_settings: {  }
-    type: text_trimmed
+    type: image
     region: content
   field_tags:
     weight: 3
@@ -58,6 +49,11 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  search_api_excerpt:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_author: true
   field_cooking_time: true
@@ -67,3 +63,4 @@ hidden:
   field_preparation_time: true
   field_recipe_category: true
   field_recipe_instruction: true
+  field_summary: true
