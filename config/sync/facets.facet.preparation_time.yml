@@ -18,7 +18,7 @@ facet_source_id: 'search_api:views_page__search__page_1'
 widget:
   type: range_slider
   config:
-    show_numbers: false
+    show_numbers: true
     prefix: ''
     suffix: ''
     min_type: search_result
