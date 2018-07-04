@@ -6,6 +6,7 @@ use Drupal\Core\Form\FormStateInterface;
  */
 function umami_search_form_views_exposed_form_alter(&$form, FormStateInterface $form_state) {
   if ($form['#id'] == 'views-exposed-form-search-page-1') {
-    $form['search_api_fulltext']['#attributes']['placeholder'] = t('Search by keyword, ingredient, dish');
+    $test = '';
+    $form['query']['#attributes']['placeholder'] = t('Search by keyword, ingredient, dish');
   }
 }
