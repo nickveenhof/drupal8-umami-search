@@ -3,16 +3,17 @@
  * This file is used to style the search block.
  */
 
+
 .search-form + h2 {
   margin: 0 14px 1rem;
 }
 
-.search-block-form {
+.block-search.views-exposed-form {
   display: none;
 }
 
 @media screen and (min-width: 48em) {
-  .search-block-form {
+  .block-search.views-exposed-form {
     flex: 0 1 50%;
     order: 1;
     display: block;
@@ -20,10 +21,14 @@
   }
 }
 
-.search-block-form form {
+.block-search.views-exposed-form form {
   display: flex;
   margin-top: 1.3rem;
   margin-bottom: 1.2rem;
+}
+
+.block-search.views-exposed-form form .form-item {
+  margin: 0;
 }
 
 .search-iconwrap {
@@ -63,11 +68,11 @@
 }
 
 /* Search input */
-.form-type-search {
+.form-item-search-api-fulltext .form-type-search {
   margin-top: 0;
   margin-bottom: 0;
 }
-.form-search {
+.form-item-search-api-fulltext .form-text {
   width: 20em;
   max-width: calc(100vw - 6.25em);
   height: auto;
@@ -82,35 +87,36 @@
   background-size: 1.5em;
   color: #464646;
 }
-.form-search:focus {
+.form-item-search-api-fulltext .form-text:focus {
   outline: none;
   margin: 0 0 -2px -2px;
   padding: 5px 8px 5px 32px;
+  border: 3px solid #00836d;
 }
 
-.form-search::placeholder {
+.form-item-search-api-fulltext .form-text::placeholder {
   opacity: 1;
 }
-.form-type-search .form-search {
+.form-item-search-api-fulltext .form-text {
   box-sizing: border-box; /* Override input[type="search"] of normalize.css */
 }
 
 /* Search submit */
-.search-block-form .form-actions {
+.block-search.views-exposed-form .form-actions {
   margin-top: 0;
   margin-bottom: 0;
   position: relative;
   z-index: 1;
 }
-.search-block-form .form-submit,
+.block-search.views-exposed-form .form-submit,
 .search-form .form-submit {
   /* Take off the border radius on the left side as it bumps into the search field */
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.search-block-form .form-submit:focus,
-.search-block-form .form-submit:hover,
+.block-search.views-exposed-form .form-submit:focus,
+.block-search.views-exposed-form .form-submit:hover,
 .search-form .form-submit:focus,
 .search-form .form-submit:hover {
   border-top-left-radius: 4px;
