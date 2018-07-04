@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.page.body
     - node.type.page
   module:
-    - text
     - user
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
@@ -16,17 +15,15 @@ targetEntityType: node
 bundle: page
 mode: search_result
 content:
-  body:
-    label: hidden
-    type: text_trimmed
-    weight: 100
-    region: content
-    settings:
-      trim_length: 200
-    third_party_settings: {  }
   links:
-    weight: 101
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+  search_api_excerpt:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true

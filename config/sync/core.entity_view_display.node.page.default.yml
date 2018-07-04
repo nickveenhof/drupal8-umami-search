@@ -16,15 +16,16 @@ bundle: page
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 100
+    weight: 0
     region: content
+    label: above
     settings: {  }
     third_party_settings: {  }
   links:
-    weight: 101
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  search_api_excerpt: true
