@@ -11,7 +11,7 @@ dependencies:
 id: tags
 theme: umami_search
 region: sidebar
-weight: -9
+weight: -5
 provider: null
 plugin: 'facet_block:tags'
 settings:

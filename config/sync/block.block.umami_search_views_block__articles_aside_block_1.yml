@@ -1,6 +1,6 @@
 uuid: b8f4fadd-bf3a-407a-a54a-522c9baf3cb0
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.articles_aside
@@ -13,8 +13,8 @@ _core:
   default_config_hash: FErCHEdY5eQdArPwmj2ED-XNDR6HIepmKNb7itEfQIQ
 id: umami_search_views_block__articles_aside_block_1
 theme: umami_search
-region: header
-weight: -6
+region: sidebar
+weight: -10
 provider: null
 plugin: 'views_block:articles_aside-block_1'
 settings:

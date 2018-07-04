@@ -1,6 +1,6 @@
 uuid: 2f585f7d-d8b8-4042-b54c-874bbc474df6
 langcode: en
-status: false
+status: true
 dependencies:
   content:
     - 'block_content:banner_block:4c7d58a3-a45d-412d-9068-259c57e40541'
@@ -16,8 +16,8 @@ _core:
   default_config_hash: avMRG5BtP0-47yiSruQWrmR76WZko60hftswPHIebjI
 id: umami_search_banner_recipes
 theme: umami_search
-region: header
-weight: -3
+region: banner_top
+weight: -10
 provider: null
 plugin: 'block_content:4c7d58a3-a45d-412d-9068-259c57e40541'
 settings:

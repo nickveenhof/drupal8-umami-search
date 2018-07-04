@@ -16,7 +16,7 @@ show_only_one_result: false
 field_identifier: field_recipe_category
 facet_source_id: 'search_api:views_page__search__page_1'
 widget:
-  type: links
+  type: checkbox
   config:
     show_numbers: false
     soft_limit: 0

@@ -1,6 +1,6 @@
 uuid: 0451729b-ac12-487b-ab44-3fb86a404569
 langcode: en
-status: false
+status: true
 dependencies:
   theme:
     - umami_search
@@ -8,8 +8,8 @@ _core:
   default_config_hash: q6m4raFgRjMQbo7CkBMUIW1dRS1ix0XNoex2S2NV8sM
 id: umami_search_page_title
 theme: umami_search
-region: header
-weight: -5
+region: page_title
+weight: -10
 provider: null
 plugin: page_title_block
 settings:

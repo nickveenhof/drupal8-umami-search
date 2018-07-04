@@ -11,7 +11,7 @@ dependencies:
 id: difficulty
 theme: umami_search
 region: sidebar
-weight: -5
+weight: -9
 provider: null
 plugin: 'facet_block:difficulty'
 settings:

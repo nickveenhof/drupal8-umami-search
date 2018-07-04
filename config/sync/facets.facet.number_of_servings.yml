@@ -16,13 +16,16 @@ show_only_one_result: false
 field_identifier: field_number_of_servings
 facet_source_id: 'search_api:views_page__search__page_1'
 widget:
-  type: links
+  type: range_slider
   config:
-    show_numbers: false
-    soft_limit: 0
-    soft_limit_settings:
-      show_less_label: 'Show less'
-      show_more_label: 'Show more'
+    show_numbers: true
+    prefix: ''
+    suffix: ''
+    min_type: search_result
+    min_value: !!float 0
+    max_type: search_result
+    max_value: !!float 10
+    step: !!float 1
 query_operator: or
 use_hierarchy: false
 expand_hierarchy: false
@@ -49,6 +52,13 @@ processor_configs:
       sort: 40
     settings:
       sort: ASC
+  range_slider:
+    processor_id: range_slider
+    weights:
+      pre_query: 60
+      post_query: 60
+      build: 20
+    settings: {  }
   url_processor_handler:
     processor_id: url_processor_handler
     weights:

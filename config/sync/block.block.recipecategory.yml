@@ -11,7 +11,7 @@ dependencies:
 id: recipecategory
 theme: umami_search
 region: sidebar
-weight: -10
+weight: -8
 provider: null
 plugin: 'facet_block:recipe_category'
 settings:
