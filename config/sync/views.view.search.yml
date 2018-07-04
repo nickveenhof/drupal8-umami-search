@@ -95,7 +95,7 @@ display:
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
-            identifier: query
+            identifier: search_api_fulltext
             required: false
             remember: false
             multiple: false
@@ -130,6 +130,7 @@ display:
       arguments: {  }
       display_extenders: {  }
       use_ajax: false
+      css_class: view-search-results
     cache_metadata:
       max-age: -1
       contexts:
@@ -150,10 +151,6 @@ display:
         title: Search
         menu_name: main
       exposed_block: true
-      cache:
-        type: none
-      defaults:
-        cache: false
     cache_metadata:
       max-age: -1
       contexts:

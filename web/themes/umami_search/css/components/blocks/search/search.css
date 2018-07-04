@@ -8,12 +8,12 @@
   margin: 0 14px 1rem;
 }
 
-.block-search.views-exposed-form {
+.block-search {
   display: none;
 }
 
 @media screen and (min-width: 48em) {
-  .block-search.views-exposed-form {
+  .block-search {
     flex: 0 1 50%;
     order: 1;
     display: block;
@@ -21,13 +21,13 @@
   }
 }
 
-.block-search.views-exposed-form form {
+.block-search form {
   display: flex;
   margin-top: 1.3rem;
   margin-bottom: 1.2rem;
 }
 
-.block-search.views-exposed-form form .form-item {
+.block-search form .form-item {
   margin: 0;
 }
 
@@ -102,21 +102,21 @@
 }
 
 /* Search submit */
-.block-search.views-exposed-form .form-actions {
+.block-search .form-actions {
   margin-top: 0;
   margin-bottom: 0;
   position: relative;
   z-index: 1;
 }
-.block-search.views-exposed-form .form-submit,
+.block-search .form-submit,
 .search-form .form-submit {
   /* Take off the border radius on the left side as it bumps into the search field */
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.block-search.views-exposed-form .form-submit:focus,
-.block-search.views-exposed-form .form-submit:hover,
+.block-search .form-submit:focus,
+.block-search .form-submit:hover,
 .search-form .form-submit:focus,
 .search-form .form-submit:hover {
   border-top-left-radius: 4px;
