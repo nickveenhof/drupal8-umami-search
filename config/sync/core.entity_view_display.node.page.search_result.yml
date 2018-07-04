@@ -18,11 +18,11 @@ mode: search_result
 content:
   body:
     label: hidden
-    type: text_summary_or_trimmed
+    type: text_trimmed
     weight: 100
     region: content
     settings:
-      trim_length: 600
+      trim_length: 200
     third_party_settings: {  }
   links:
     weight: 101

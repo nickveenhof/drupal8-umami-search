@@ -11,7 +11,7 @@ dependencies:
 id: umami_search_exposedformsearchpage_1
 theme: umami_search
 region: header
-weight: -5
+weight: -8
 provider: null
 plugin: 'views_exposed_filter_block:search-page_1'
 settings:

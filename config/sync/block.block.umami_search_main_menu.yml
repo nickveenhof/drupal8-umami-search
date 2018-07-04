@@ -13,7 +13,7 @@ _core:
 id: umami_search_main_menu
 theme: umami_search
 region: header
-weight: -7
+weight: -10
 provider: null
 plugin: 'system_menu_block:main'
 settings:

@@ -1,6 +1,6 @@
 uuid: 58de0432-9ac3-49a9-85b0-dfab0b5caf26
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: kGBJMXyDmDg5sa7AQOgzrkg2O5AB1DXYm77YJZedhRE
 id: umami_search_breadcrumbs
 theme: umami_search
-region: breadcrumbs
-weight: 0
+region: header
+weight: -1
 provider: null
 plugin: system_breadcrumb_block
 settings:

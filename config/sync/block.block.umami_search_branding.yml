@@ -11,7 +11,7 @@ _core:
 id: umami_search_branding
 theme: umami_search
 region: header
-weight: -6
+weight: -9
 provider: null
 plugin: system_branding_block
 settings:

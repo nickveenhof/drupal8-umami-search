@@ -1,6 +1,6 @@
 uuid: eec9af65-abc7-4837-9407-91300a101f1e
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - umami_search
@@ -8,8 +8,8 @@ _core:
   default_config_hash: D_u42KUsn2FJ3U01b1I7e0dyrCHEwk3KbFY1omR1i-s
 id: umami_search_local_tasks
 theme: umami_search
-region: tabs
-weight: -7
+region: header
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:

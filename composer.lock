@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc41071de1942154b3d40a8929444047",
+    "content-hash": "510a1c2c6b9e5e66becf7e7efe865ba3",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1892,6 +1892,9 @@
                     "recurse": false,
                     "replace": false,
                     "merge-extra": false
+                },
+                "patches_applied": {
+                    "Umami Region Fix for bigpipe to work as expected with facets": "https://www.drupal.org/files/issues/2018-06-06/umami_page_filter-2937640-12.patch"
                 }
             },
             "autoload": {
@@ -2031,6 +2034,9 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
+                },
+                "patches_applied": {
+                    "Change default weights of the url processor so that the range facet works as expected out of the box": "https://www.drupal.org/files/issues/2018-07-04/2983572.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
