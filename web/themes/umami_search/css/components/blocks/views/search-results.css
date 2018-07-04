@@ -1,0 +1,15 @@
+.view-search .view-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.view-search .views-row {
+  width: 100%;
+}
+
+.node--view-mode-search-result {
+  padding: 1.5rem;
+  margin: 0 0 28px;
+  background-color: #fff;
+  border: 1px solid #fcece7;
+}
