@@ -1,2 +1,11 @@
 <?php
+use Drupal\Core\Form\FormStateInterface;
 
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function umami_search_form_views_exposed_form_alter(&$form, FormStateInterface $form_state) {
+  if ($form['#id'] == 'views-exposed-form-search-page-1') {
+    $form['search_api_fulltext']['#attributes']['placeholder'] = t('Search by keyword, ingredient, dish');
+  }
+}

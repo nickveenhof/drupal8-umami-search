@@ -5,6 +5,9 @@ description: 'The theme used for the Drupal Search demonstration site.'
 version: VERSION
 core: 8.x
 
+libraries:
+  - umami_search/global
+
 regions:
   header: Header
   highlighted: Highlighted
