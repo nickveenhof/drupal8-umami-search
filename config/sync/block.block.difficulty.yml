@@ -20,6 +20,7 @@ settings:
   label: Difficulty
   provider: facets
   label_display: visible
+  block_id: difficulty
 visibility:
   request_path:
     id: request_path

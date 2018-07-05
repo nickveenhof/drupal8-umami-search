@@ -20,6 +20,7 @@ settings:
   label: Tags
   provider: facets
   label_display: visible
+  block_id: tags
 visibility:
   request_path:
     id: request_path

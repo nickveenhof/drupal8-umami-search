@@ -20,6 +20,7 @@ settings:
   label: 'Number of servings'
   provider: facets
   label_display: visible
+  block_id: numberofservings
 visibility:
   request_path:
     id: request_path
