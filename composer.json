@@ -78,7 +78,8 @@
                 "Umami Region Fix for bigpipe to work as expected with facets": "https://www.drupal.org/files/issues/2018-06-06/umami_page_filter-2937640-12.patch"
             },
             "drupal/facets": {
-                "Change default weights of the url processor so that the range facet works as expected out of the box": "https://www.drupal.org/files/issues/2018-07-04/2983572.patch"
+                "Change default weights of the url processor so that the range facet works as expected out of the box": "https://www.drupal.org/files/issues/2018-07-04/2983572.patch",
+                "Make facet range slider work with pretty paths": "https://www.drupal.org/files/issues/2018-06-01/2974512.patch"
             },
             "drupal/search_api": {
                 "Embed the excerpt in the view modes of the site": "https://www.drupal.org/files/issues/2018-07-04/2983606-5--excerpt-field.patch",
