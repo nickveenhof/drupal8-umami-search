@@ -125,16 +125,6 @@ display:
       sorts: {  }
       title: Search
       header:
-        result:
-          id: result
-          table: views
-          field: result
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          content: 'We have found @total results.'
-          plugin_id: result
         entity_block:
           id: entity_block
           table: views

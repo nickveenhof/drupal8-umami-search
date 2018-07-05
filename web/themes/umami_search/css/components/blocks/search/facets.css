@@ -3,7 +3,7 @@
  * This file is used to style the facet blocks.
  */
 
-.block-facets {
+.block-facets, .block-facets-summary {
   background-color: #fff;
   border: 1px solid #fcece7;
   padding: 1.5rem;

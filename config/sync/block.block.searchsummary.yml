@@ -6,6 +6,7 @@ dependencies:
     - facets_summary.facets_summary.search_summary
   module:
     - facets_summary
+    - system
   theme:
     - umami_search
 id: searchsummary
@@ -19,4 +20,9 @@ settings:
   label: 'Current Search'
   provider: facets_summary
   label_display: visible
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: false
+    context_mapping: {  }

@@ -6,6 +6,7 @@ dependencies:
     - facets.facet.number_of_servings
   module:
     - facets
+    - system
   theme:
     - umami_search
 id: numberofservings
@@ -19,4 +20,9 @@ settings:
   label: 'Number of servings'
   provider: facets
   label_display: visible
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: false
+    context_mapping: {  }
