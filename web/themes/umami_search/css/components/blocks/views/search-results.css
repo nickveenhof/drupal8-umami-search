@@ -19,8 +19,14 @@
 }
 
 .node--view-mode-search-result {
+  overflow: hidden;
   padding: 1.5rem;
   margin: 0 0 28px;
   background-color: #fff;
   border: 1px solid #fcece7;
+}
+
+.node--view-mode-search-result .image-left {
+  float: left;
+  margin-right: 10px;
 }
