@@ -3,6 +3,17 @@
   flex-wrap: wrap;
 }
 
+.view-search .view-header {
+  padding: 1.5rem;
+  margin: 0 0 28px;
+  background-color: #fff;
+  border: 1px solid #fcece7;
+}
+
+.view-search .view-header .block-search {
+  border-bottom: none;
+}
+
 .view-search .views-row {
   width: 100%;
 }

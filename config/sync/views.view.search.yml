@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block.block.umami_search_exposedformsearchpage_1
     - search_api.index.umami_search_index
     - system.menu.main
   module:
@@ -123,7 +124,30 @@ display:
           plugin_id: search_api_fulltext
       sorts: {  }
       title: Search
-      header: {  }
+      header:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          content: 'We have found @total results.'
+          plugin_id: result
+        entity_block:
+          id: entity_block
+          table: views
+          field: entity_block
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          target: umami_search_exposedformsearchpage_1
+          view_mode: default
+          bypass_access: false
+          plugin_id: entity
       footer: {  }
       empty: {  }
       relationships: {  }
