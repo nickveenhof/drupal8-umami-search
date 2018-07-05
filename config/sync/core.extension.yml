@@ -17,7 +17,6 @@ module:
   dynamic_page_cache: 0
   editor: 0
   facets: 0
-  facets_pretty_paths: 0
   facets_range_widget: 0
   facets_summary: 0
   field: 0
