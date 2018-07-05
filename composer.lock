@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "94208c4eab8a2e672780dcf82536ecde",
+    "content-hash": "d7609042d8e6ed67abd2023d3afbbd29",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2122,14 +2122,13 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta3",
-                    "datestamp": "1530623921",
+                    "datestamp": "1530623931",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 },
                 "patches_applied": {
-                    "Change default weights of the url processor so that the range facet works as expected out of the box": "https://www.drupal.org/files/issues/2018-07-04/2983572.patch",
                     "Make facet range slider work with pretty paths": "https://www.drupal.org/files/issues/2018-06-01/2974512.patch"
                 }
             },
