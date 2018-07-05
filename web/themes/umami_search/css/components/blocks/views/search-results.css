@@ -28,5 +28,35 @@
 
 .node--view-mode-search-result .image-left {
   float: left;
-  margin-right: 10px;
+  margin-right: 15px;
+}
+
+.node--view-mode-search-result strong {
+  background-color: #e6eee0;
+  color: #444;
+  text-decoration: none;
+  outline-offset: 1px;
+}
+
+.node--view-mode-search-result .label-items {
+  margin-bottom: 0px;
+}
+
+.node--view-mode-search-result .field--name-field-difficulty {
+  color: #757575;
+}
+
+.node--view-mode-search-result .field--name-field-cooking-time {
+  color: #757575;
+  font-size: 0.889rem;
+}
+
+.node--view-mode-search-result .field--name-field-cooking-time .field__label {
+  font-weight: normal;
+  margin-right: 0.6rem;
+  display: inline;
+}
+
+.node--view-mode-search-result .field--name-field-cooking-time .field__item {
+  display: inline;
 }

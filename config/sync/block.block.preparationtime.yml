@@ -6,6 +6,7 @@ dependencies:
     - facets.facet.preparation_time
   module:
     - facets
+    - system
   theme:
     - umami_search
 id: preparationtime
@@ -19,4 +20,9 @@ settings:
   label: 'Preparation time'
   provider: facets
   label_display: visible
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: false
+    context_mapping: {  }

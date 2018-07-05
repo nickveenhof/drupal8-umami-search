@@ -19,6 +19,7 @@ dependencies:
     - node.type.recipe
   module:
     - image
+    - options
     - user
 _core:
   default_config_hash: py84jFo-01t9uXD4iSM-KqDdxA7K2JDp4HnAEsBCUUs
@@ -27,6 +28,22 @@ targetEntityType: node
 bundle: recipe
 mode: search_result
 content:
+  field_cooking_time:
+    type: number_integer
+    weight: 4
+    region: content
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_difficulty:
+    type: list_default
+    weight: 3
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   field_image:
     weight: 1
     label: hidden
@@ -37,7 +54,7 @@ content:
     type: image
     region: content
   field_tags:
-    weight: 3
+    weight: 2
     label: above
     settings:
       link: true
@@ -50,14 +67,12 @@ content:
     settings: {  }
     third_party_settings: {  }
   search_api_excerpt:
-    weight: 2
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   field_author: true
-  field_cooking_time: true
-  field_difficulty: true
   field_ingredients: true
   field_number_of_servings: true
   field_preparation_time: true

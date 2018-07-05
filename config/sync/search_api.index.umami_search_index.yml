@@ -11,7 +11,7 @@ dependencies:
     - field.storage.node.field_recipe_instruction
     - field.storage.node.field_tags
     - search_api.server.mysql_search_service
-    - core.entity_view_mode.node.full
+    - core.entity_view_mode.node.search_index
   module:
     - search_api
     - node
@@ -29,9 +29,9 @@ field_settings:
         anonymous: anonymous
       view_mode:
         'entity:node':
-          article: full
-          page: default
-          recipe: full
+          article: search_index
+          page: search_index
+          recipe: search_index
   field_difficulty:
     label: Difficulty
     datasource_id: 'entity:node'
