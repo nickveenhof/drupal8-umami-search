@@ -24,7 +24,7 @@ else
 fi
 
 DOCROOT="$SCRIPT_DIR/../../docroot"
-cd $DOCROOT
+cd $SCRIPT_DIR/../../
 
 # D8
 rm ../.ht.sqlite
