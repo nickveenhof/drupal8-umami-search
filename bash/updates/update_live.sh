@@ -27,7 +27,7 @@ DOCROOT="$SCRIPT_DIR/../../docroot"
 cd $SCRIPT_DIR/../../
 
 # D8
-rm ../.ht.sqlite
+rm ../.ht.sqlite ||
 composer install
 mkdir docroot/themes/contrib
 mkdir docroot/libraries/jquery-ui-slider-pips

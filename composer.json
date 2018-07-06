@@ -49,7 +49,7 @@
         "classmap": [
             "etc/scripts/composer/ScriptHandler.php"
         ],
-        "files": ["load.environment.php"]
+        "files": ["etc/scripts/composer/load.environment.php"]
     },
     "scripts": {
         "pre-install-cmd": [
