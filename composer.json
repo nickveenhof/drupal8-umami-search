@@ -19,6 +19,7 @@
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.5",
+        "drupal/config_installer": "^1.8",
         "drupal/config_readonly": "^1.0@beta",
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.5.3",
@@ -75,7 +76,8 @@
         },
         "patches": {
             "drupal/core": {
-                "Umami Region Fix for bigpipe to work as expected with facets": "https://www.drupal.org/files/issues/2018-06-06/umami_page_filter-2937640-12.patch"
+                "Umami Region Fix for bigpipe to work as expected with facets": "https://www.drupal.org/files/issues/2018-06-06/umami_page_filter-2937640-12.patch",
+                "Set the configuration directory for configuration imports": "patches/core-settings-for-import.patch"
             },
             "drupal/facets": {
                 "Make facet range slider work with pretty paths": "https://www.drupal.org/files/issues/2018-06-01/2974512.patch"

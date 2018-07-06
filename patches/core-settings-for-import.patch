@@ -1,0 +1,19 @@
+diff --git a/sites/default/default.settings.php b/sites/default/default.settings.php
+index 5bcecc267f..a471b4e72f 100644
+--- a/sites/default/default.settings.php
++++ b/sites/default/default.settings.php
+@@ -768,3 +768,13 @@
+ # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+ #   include $app_root . '/' . $site_path . '/settings.local.php';
+ # }
++
++/**
++ * Make sure our config cannot be changed from the UI.
++ */
++$settings['config_readonly'] = TRUE;
++
++/**
++ * Preset the sync directory so that we can install from configuration.
++ */
++$config_directories['sync'] = '../config/sync';
+\ No newline at end of file
