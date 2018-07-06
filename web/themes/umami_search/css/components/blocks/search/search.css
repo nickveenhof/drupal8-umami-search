@@ -140,6 +140,8 @@
   display: none;
 }
 
-.view-id-search.view-display-id-page_1 .form-type-textfield .form-text {
-  width: auto;
+@media screen and (max-width: 48em) {
+  .view-id-search.view-display-id-page_1 .form-type-textfield .form-text {
+    width: auto;
+  }
 }
