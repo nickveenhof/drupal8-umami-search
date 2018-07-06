@@ -76,7 +76,7 @@ field_settings:
     label: 'Recipe instruction » Processed text'
     datasource_id: 'entity:node'
     property_path: 'field_recipe_instruction:processed'
-    type: string
+    type: text
     dependencies:
       config:
         - field.storage.node.field_recipe_instruction
@@ -101,6 +101,7 @@ processor_settings:
     all_fields: true
     fields:
       - rendered_item
+      - processed
     exceptions: {  }
     weights:
       preprocess_index: 0
@@ -123,6 +124,7 @@ processor_settings:
     all_fields: true
     fields:
       - rendered_item
+      - processed
     spaces: ''
     overlap_cjk: 1
     minimum_word_size: '3'
@@ -133,6 +135,7 @@ processor_settings:
     all_fields: true
     fields:
       - rendered_item
+      - processed
     stopwords:
       - a
       - an
