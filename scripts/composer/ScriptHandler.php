@@ -35,6 +35,9 @@ class ScriptHandler {
       }
     }
 
+    // Make sure we can write to the sites/default folder
+    $fs->chmod($drupalRoot . '/sites/default/settings.php', 0644);
+
     // Prepare the settings file for installation
     if (!$fs->exists($drupalRoot . '/sites/default/settings.php') and $fs->exists($drupalRoot . '/sites/default/default.settings.php')) {
       $fs->copy($drupalRoot . '/sites/default/default.settings.php', $drupalRoot . '/sites/default/settings.php');

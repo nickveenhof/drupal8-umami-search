@@ -13,3 +13,7 @@ The site can be installed locally as follows:
 * cp -R docroot/core/profiles/demo_umami/modules/demo_umami_content docroot/modules/contrib/
 * drush site-install --verbose config_installer config_installer_sync_configure_form.sync_directory=config --yes
 * drush ev '\Drupal::classResolver()->getInstanceFromDefinition(Drupal\demo_umami_content\InstallHelper::class)->importContent();'
+* drush search-api:reset-tracker
+* drush search-api:index
+
+If you get issues with the patch file, use ```chmod u+w sites/default/``` to make your sites folder writable

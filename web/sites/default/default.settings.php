@@ -785,3 +785,13 @@ $settings['entity_update_batch_size'] = 50;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+
+/**
+ * Make sure our config cannot be changed from the UI.
+ */
+$settings['config_readonly'] = TRUE;
+
+/**
+ * Preset the sync directory so that we can install from configuration.
+ */
+$config_directories['sync'] = '../config/sync';
