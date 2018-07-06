@@ -28,9 +28,13 @@ cd $SCRIPT_DIR/../../
 
 # D8
 rm ../.ht.sqlite ||
+rm -rf docroot
+ln -s web docroot
+rm -rf web/core/
 composer install
-mkdir docroot/themes/contrib
-mkdir docroot/libraries/jquery-ui-slider-pips
+mkdir -p docroot/themes/contrib
+rm -rf docroot/libraries/jquery-ui-slider-pips
+mkdir -p docroot/libraries/jquery-ui-slider-pips
 wget -P docroot/libraries/jquery-ui-slider-pips https://raw.githubusercontent.com/simeydotme/jQuery-ui-Slider-Pips/v1.11.3/dist/jquery-ui-slider-pips.min.css
 wget -P docroot/libraries/jquery-ui-slider-pips https://raw.githubusercontent.com/simeydotme/jQuery-ui-Slider-Pips/v1.11.3/dist/jquery-ui-slider-pips.min.js
 cp -R docroot/core/profiles/demo_umami/themes/umami docroot/themes/contrib/
