@@ -1,28 +1,4 @@
 <?php
-      $db_name = 'drupalsearchdemosite_live';
-      $db_user = 'drupalsearchdemosite';
-      $db_pass = '3oHqcFviSoQFDc63kqLd';
-      $db_host = 'localhost';
-      $db_port = '';
-      $db_driver = 'mysql';
-      $db_prefix = '';
-
-      $databases = array (
-        'default' =>
-        array (
-          'default' =>
-          array (
-            'database' => $db_name,
-            'username' => $db_user,
-            'password' => $db_pass,
-            'host' => $db_host,
-            'port' => $db_port,
-            'driver' => $db_driver,
-            'prefix' => $db_prefix,
-          ),
-        ),
-      );
-
       $update_free_access = FALSE;
 
 
