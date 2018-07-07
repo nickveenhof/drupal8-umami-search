@@ -1,0 +1,14 @@
+name: 'Umami Search demo: Content'
+description: Imports the content for the Umami Search demo.
+type: module
+version: VERSION
+core: 8.x
+package: 'Core (Experimental)'
+dependencies:
+  - field
+  - node
+  - options
+  - path
+  - taxonomy
+  - text
+  - user

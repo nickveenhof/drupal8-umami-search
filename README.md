@@ -16,7 +16,8 @@ wget -P docroot/libraries/jquery-ui-slider-pips https://raw.githubusercontent.co
 cp -R docroot/core/profiles/demo_umami/themes/umami docroot/themes/contrib/
 cp -R docroot/core/profiles/demo_umami/modules/demo_umami_content docroot/modules/contrib/
 drush site-install --db-url=sqlite://../.ht.sqlite --verbose config_installer config_installer_sync_configure_form.sync_directory=../config/sync/ --yes
-drush ev '\Drupal::classResolver()->getInstanceFromDefinition(Drupal\demo_umami_content\InstallHelper::class)->importContent();'
+drush en demo_umami_content
+drush en demo_umami_search_content
 drush search-api:reset-tracker
 drush search-api:index
 drush cr

@@ -1,0 +1,25 @@
+uuid: 2003a6bd-1df5-4bd7-92ad-ec6cf9eb9483
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9b4dcd67-99f3-48d0-93c9-2c46648b29dh'
+  module:
+    - block_content
+  theme:
+    - umami_search
+id: umamisearchdisclaimer
+theme: umami_search
+region: header
+weight: -11
+provider: null
+plugin: 'block_content:9b4dcd67-99f3-48d0-93c9-2c46648b29dh'
+settings:
+  id: 'block_content:9b4dcd67-99f3-48d0-93c9-2c46648b29dh'
+  label: 'Umami Search disclaimer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

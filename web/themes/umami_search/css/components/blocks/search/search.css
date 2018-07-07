@@ -126,7 +126,7 @@
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   /* Make the search button bigger */
-  padding: 0.6em 1.25em 0.6em
+
 }
 
 
@@ -138,6 +138,7 @@
   border-bottom-left-radius: 0px;
   margin: 0;
   border: 1px solid #dbdbdb;/* 1px solid #dbdbdb; */
+  padding: 0.6em 1.25em 0.4em
 }
 
 .view-id-search.view-display-id-page_1 .block-search {
