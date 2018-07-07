@@ -1,0 +1,31 @@
+uuid: 5f19fda3-c27d-4abc-81c0-6967d0fc2af5
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.umami_search_index
+    - views.view.search
+  module:
+    - views
+    - search_api_autocomplete
+id: search
+label: Search
+index_id: umami_search_index
+suggester_settings:
+  server:
+    fields: {  }
+suggester_weights:
+  server: 0
+suggester_limits: {  }
+search_settings:
+  'views:search':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 10
+  min_length: 1
+  show_count: true
+  autosubmit: true
+  submit_button_selector: ':submit'
+  delay: null

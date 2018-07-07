@@ -69,13 +69,18 @@
 }
 
 /* Search input */
-.form-type-textfield .form-type-search {
+.form-type-textfield .form-type-search, .form-type-search-api-autocomplete {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.form-type-textfield .form-text {
-  width: 20em;
+.form-type-search-api-autocomplete input.form-autocomplete {
+  background: url(../../../../images/svg/search.svg) no-repeat 0.5em center #fff;
+  background-size: 1.5em;
+}
+
+.form-type-textfield .form-text, .form-type-search-api-autocomplete .form-text {
+  width: 25em;
   max-width: calc(100vw - 6.25em);
   height: auto;
   margin: 0 -2px 0 0;
@@ -90,20 +95,22 @@
   color: #464646;
 }
 
-.form-type-textfield .form-text:focus {
+.form-type-textfield .form-text:focus, .form-type-search-api-autocomplete .form-text:focus {
   outline: none;
   margin: 0 0 -2px -2px;
   padding: 5px 8px 5px 32px;
   border: 3px solid #00836d;
 }
 
-.form-type-textfield .form-text::placeholder {
+.form-type-textfield .form-text::placeholder, .form-type-search-api-autocomplete .form-text::placeholder {
   opacity: 1;
 }
 
-.form-type-textfield .form-text {
+.form-type-textfield .form-text, .form-type-search-api-autocomplete .form-text {
   box-sizing: border-box; /* Override input[type="search"] of normalize.css */
 }
+
+
 
 /* Search submit */
 .block-search .form-actions {
@@ -116,17 +123,21 @@
 .block-search .form-submit,
 .search-form .form-submit {
   /* Take off the border radius on the left side as it bumps into the search field */
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  /* Make the search button bigger */
+  padding: 0.6em 1.25em 0.6em
 }
+
 
 .block-search .form-submit:focus,
 .block-search .form-submit:hover,
 .search-form .form-submit:focus,
 .search-form .form-submit:hover {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
   margin: 0;
+  border: 1px solid #dbdbdb;/* 1px solid #dbdbdb; */
 }
 
 .view-id-search.view-display-id-page_1 .block-search {
