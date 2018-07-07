@@ -40,8 +40,8 @@ wget -P docroot/libraries/jquery-ui-slider-pips https://raw.githubusercontent.co
 cp -R docroot/core/profiles/demo_umami/themes/umami docroot/themes/contrib/
 cp -R docroot/core/profiles/demo_umami/modules/demo_umami_content docroot/modules/contrib/
 ${DRUSH} site-install --account-name=drupalsearch --account-pass=drupalsearch --db-url=sqlite://../.ht.sqlite --verbose config_installer config_installer_sync_configure_form.sync_directory=../config/sync/ --yes
-${DRUSH} en demo_umami_content
-${DRUSH} en demo_umami_search_content
+${DRUSH} ev '\Drupal::classResolver()->getInstanceFromDefinition(Drupal\demo_umami_content\InstallHelper::class)->importContent();'
+${DRUSH} ev '\Drupal::classResolver()->getInstanceFromDefinition(Drupal\demo_umami_search_content\InstallHelper::class)->importContent();'
 ${DRUSH} search-api:reset-tracker
 ${DRUSH} search-api:index
 ${DRUSH} cr
