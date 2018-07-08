@@ -1,5 +1,6 @@
 module:
   automated_cron: 0
+  big_pipe: 0
   block: 0
   block_content: 0
   breakpoint: 0
@@ -39,6 +40,7 @@ module:
   search_api: 0
   search_api_autocomplete: 0
   search_api_db: 0
+  search_api_sorts: 0
   shortcut: 0
   system: 0
   taxonomy: 0

@@ -29,6 +29,7 @@
         "drupal/search_api": "^1.8",
         "drupal/search_api_autocomplete": "^1.0",
         "drupal/search_api_solr": "^2.0",
+        "drupal/search_api_sorts": "^1.0@beta",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
@@ -82,7 +83,8 @@
                 "Set the configuration directory for configuration imports": "patches/core-settings-for-import.patch"
             },
             "drupal/facets": {
-                "Make facet range slider work with pretty paths": "https://www.drupal.org/files/issues/2018-06-01/2974512.patch"
+                "Make facet range slider work with pretty paths": "https://www.drupal.org/files/issues/2018-06-01/2974512.patch",
+                "Hide facets when they are empty and configured to dissapear when empty": "https://www.drupal.org/files/issues/2018-07-08/2984465-4.patch"
             },
             "drupal/search_api": {
                 "Embed the excerpt in the view modes of the site": "https://www.drupal.org/files/issues/2018-07-04/2983606-5--excerpt-field.patch",

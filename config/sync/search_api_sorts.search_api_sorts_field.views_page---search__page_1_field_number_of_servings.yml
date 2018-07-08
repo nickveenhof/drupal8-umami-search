@@ -1,0 +1,11 @@
+uuid: f8e379cd-2981-43e6-a7c3-2c36bcdd30b0
+langcode: en
+status: true
+dependencies: {  }
+id: views_page---search__page_1_field_number_of_servings
+display_id: views_page---search__page_1
+field_identifier: field_number_of_servings
+default_sort: false
+default_order: asc
+label: 'Number of servings'
+weight: 0

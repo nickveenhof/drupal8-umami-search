@@ -1,0 +1,11 @@
+uuid: 883c0f29-7563-43e9-b403-1315936162c1
+langcode: en
+status: true
+dependencies: {  }
+id: views_page---search__page_1_field_difficulty
+display_id: views_page---search__page_1
+field_identifier: field_difficulty
+default_sort: false
+default_order: asc
+label: Difficulty
+weight: 0

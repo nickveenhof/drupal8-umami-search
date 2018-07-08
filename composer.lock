@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b5949b42837f378ad5e3a54fc4bfa3c7",
+    "content-hash": "8cd98de51c297ad7e123f4137e510c7b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2175,7 +2175,8 @@
                     }
                 },
                 "patches_applied": {
-                    "Make facet range slider work with pretty paths": "https://www.drupal.org/files/issues/2018-06-01/2974512.patch"
+                    "Make facet range slider work with pretty paths": "https://www.drupal.org/files/issues/2018-06-01/2974512.patch",
+                    "Hide facets when they are empty and configured to dissapear when empty": "https://www.drupal.org/files/issues/2018-07-08/2984465-4.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2533,6 +2534,66 @@
                 "source": "http://git.drupal.org/project/search_api_solr.git",
                 "issues": "https://www.drupal.org/project/issues/search_api_solr",
                 "irc": "irc://irc.freenode.org/drupal-search-api"
+            }
+        },
+        {
+            "name": "drupal/search_api_sorts",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/search_api_sorts",
+                "reference": "8.x-1.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/search_api_sorts-8.x-1.0-beta1.zip",
+                "reference": "8.x-1.0-beta1",
+                "shasum": "38faddafaaaa4f80ada772c9d58df819a80bacac"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/search_api": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1492501743",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Anonymous",
+                    "homepage": "https://www.drupal.org/user/0"
+                },
+                {
+                    "name": "JeroenT",
+                    "homepage": "https://www.drupal.org/user/2228934"
+                },
+                {
+                    "name": "StryKaizer",
+                    "homepage": "https://www.drupal.org/user/462700"
+                },
+                {
+                    "name": "borisson_",
+                    "homepage": "https://www.drupal.org/user/2393360"
+                }
+            ],
+            "description": "Create sort options for search queries executed via the Search API.",
+            "homepage": "https://www.drupal.org/project/search_api_sorts",
+            "support": {
+                "source": "http://cgit.drupalcode.org/search_api_sorts"
             }
         },
         {
@@ -8050,7 +8111,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/config_readonly": 10,
-        "drupal/facets_pretty_paths": 10
+        "drupal/facets_pretty_paths": 10,
+        "drupal/search_api_sorts": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,

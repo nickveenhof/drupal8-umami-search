@@ -1,0 +1,11 @@
+uuid: 9494909e-6ca1-41b4-a926-e4a8be23bfa7
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---search__page_1_field_recipe_category
+display_id: views_page---search__page_1
+field_identifier: field_recipe_category
+default_sort: false
+default_order: asc
+label: 'Recipe category'
+weight: 0

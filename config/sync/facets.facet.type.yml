@@ -1,4 +1,4 @@
-uuid: b6185bc0-dfae-4e3b-a6ef-b306460f3055
+uuid: e0ef976a-25e4-4d94-b4d4-954c9ce6cae5
 langcode: en
 status: true
 dependencies:
@@ -7,18 +7,18 @@ dependencies:
     - views.view.search
   module:
     - search_api
-id: recipe_category
-name: 'Recipe category'
-url_alias: recipe_category
+id: type
+name: Type
+url_alias: type
 weight: 0
 min_count: 1
 show_only_one_result: false
-field_identifier: field_recipe_category
+field_identifier: type
 facet_source_id: 'search_api:views_page__search__page_1'
 widget:
-  type: checkbox
+  type: links
   config:
-    show_numbers: true
+    show_numbers: false
     soft_limit: 0
     soft_limit_settings:
       show_less_label: 'Show less'
@@ -49,11 +49,6 @@ processor_configs:
       sort: 40
     settings:
       sort: ASC
-  translate_entity:
-    processor_id: translate_entity
-    weights:
-      build: 5
-    settings: {  }
   url_processor_handler:
     processor_id: url_processor_handler
     weights:

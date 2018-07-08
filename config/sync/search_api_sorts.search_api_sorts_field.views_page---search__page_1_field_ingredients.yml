@@ -1,0 +1,11 @@
+uuid: 1b80052b-1a04-404a-af03-90b3f3caa812
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---search__page_1_field_ingredients
+display_id: views_page---search__page_1
+field_identifier: field_ingredients
+default_sort: false
+default_order: asc
+label: Ingredients
+weight: 0

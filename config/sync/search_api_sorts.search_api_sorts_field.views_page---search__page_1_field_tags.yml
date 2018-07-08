@@ -1,0 +1,11 @@
+uuid: def11816-0851-49fb-9907-2abd0e40c4df
+langcode: en
+status: false
+dependencies: {  }
+id: views_page---search__page_1_field_tags
+display_id: views_page---search__page_1
+field_identifier: field_tags
+default_sort: false
+default_order: asc
+label: Tags
+weight: 0

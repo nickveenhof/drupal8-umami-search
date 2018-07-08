@@ -1,0 +1,11 @@
+uuid: 26b45c2b-1aa0-4da7-be83-5e1de37818bb
+langcode: en
+status: true
+dependencies: {  }
+id: views_page---search__page_1_field_preparation_time
+display_id: views_page---search__page_1
+field_identifier: field_preparation_time
+default_sort: false
+default_order: asc
+label: 'Preparation time'
+weight: 0

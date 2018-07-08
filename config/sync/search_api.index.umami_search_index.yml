@@ -88,6 +88,11 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_tags
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
 datasource_settings:
   'entity:node':
     bundles:
@@ -182,6 +187,7 @@ processor_settings:
       - field_difficulty
       - field_ingredients
       - processed
+      - type
     weights:
       preprocess_index: -20
       preprocess_query: -20
@@ -192,6 +198,7 @@ processor_settings:
       - field_difficulty
       - field_ingredients
       - processed
+      - type
     weights:
       preprocess_index: -20
       preprocess_query: -20
@@ -212,6 +219,7 @@ processor_settings:
       - field_difficulty
       - field_ingredients
       - processed
+      - type
     title: true
     alt: true
     tags:
