@@ -1,6 +1,6 @@
 # Umami demo search
 
-This project is an implementation of the [Umami install profile](https://www.drupal.org/project/umami).
+This project is an implementation of the [Umami install profile](https://www.drupal.org/project/demo_umami).
 It demonstrates  search functionalities that can be achieved with a basic setup of Drupal 8's [Search API](https://www.drupal.org/project/search_api), [Search API Database Search](https://www.drupal.org/project/search_api_db) and [Facets](https://www.drupal.org/project/facets).
 
 ## Contributing
