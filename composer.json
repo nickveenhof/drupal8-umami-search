@@ -94,9 +94,6 @@
             ]
         },
         "patches": {
-            "drupal/core": {
-                "Umami Region Fix for bigpipe to work as expected with facets": "https://www.drupal.org/files/issues/2018-06-06/umami_page_filter-2937640-12.patch"
-            },
             "drupal/drupal": {
                 "Set the configuration directory for configuration imports": "patches/core-settings-for-import.patch"
             },
