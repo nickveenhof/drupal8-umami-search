@@ -29,7 +29,7 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.5.3",
         "drupal/devel": "^1.2",
-        "drupal/facets": "^1.0",
+        "drupal/facets": "^1.1",
         "drupal/facets_pretty_paths": "^1.0@beta",
         "drupal/search_api": "^1.8",
         "drupal/search_api_autocomplete": "^1.0",
@@ -78,7 +78,9 @@
                 "type:drupal-core"
             ],
             "web/libraries/{$name}": [
-                "type:drupal-library"
+                "type:drupal-library",
+                "vendor:npm-asset",
+                "vendor:bower-asset"
             ],
             "web/modules/contrib/{$name}": [
                 "type:drupal-module"
