@@ -105,7 +105,7 @@
             },
             "drupal/search_api": {
                 "Embed the excerpt in the view modes of the site": "https://www.drupal.org/files/issues/2018-08-03/2983606-11--entity_excerpt_field.patch",
-                "Create the excerpt even when the query is empty": "https://www.drupal.org/files/issues/2018-07-04/2983640-7.patch"
+                "Create the excerpt even when the query is empty": "https://www.drupal.org/files/issues/2018-07-04/2983640-9.patch"
             }
         },
         "drupal-scaffold": {
