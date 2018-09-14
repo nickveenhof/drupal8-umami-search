@@ -9,16 +9,16 @@
             "role": ""
         }
     ],
-    "repositories": {
-        "0": {
+    "repositories": [
+        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        "asset": {
+        {
             "type": "composer",
             "url": "https://asset-packagist.org"
         }
-    },
+    ],
     "require": {
         "bower-asset/jquery-ui-slider-pips": "^1.11",
         "composer/installers": "^1.2",
