@@ -101,12 +101,10 @@
                 "Set the configuration directory for configuration imports": "patches/core-settings-for-import.patch"
             },
             "drupal/facets": {
-                "Make facet range slider work with pretty paths": "https://www.drupal.org/files/issues/2018-06-01/2974512.patch",
-                "Hide facets when they are empty and configured to dissapear when empty": "https://www.drupal.org/files/issues/2018-07-08/2984465-4.patch",
-                "Allow use of asset packagist for slider pips library": "https://www.drupal.org/files/issues/2018-07-24/update-facets-range-widget-library-paths-2943636-5.patch"
+                "Hide facets when they are empty and configured to dissapear when empty": "https://www.drupal.org/files/issues/2018-08-06/2984465-reroll.patch"
             },
             "drupal/search_api": {
-                "Embed the excerpt in the view modes of the site": "https://www.drupal.org/files/issues/2018-07-04/2983606-5--excerpt-field.patch",
+                "Embed the excerpt in the view modes of the site": "https://www.drupal.org/files/issues/2018-08-03/2983606-11--entity_excerpt_field.patch",
                 "Create the excerpt even when the query is empty": "https://www.drupal.org/files/issues/2018-07-04/2983640-7.patch"
             }
         },
