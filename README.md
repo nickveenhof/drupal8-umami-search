@@ -18,3 +18,9 @@ The site can be installed locally by running `install.sh` from the project root:
 ```
 scripts/install.sh
 ```
+
+You can quickly test the site using the [Drush runserver command](https://drushcommands.com/drush-9x/core/runserver/):
+
+```
+drush runserver
+```
