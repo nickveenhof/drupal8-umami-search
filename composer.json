@@ -27,13 +27,12 @@
         "drupal/config_installer": "^1.8",
         "drupal/config_readonly": "^1.0@beta",
         "drupal/console": "^1.0.2",
-        "drupal/core": "~8.5.3",
+        "drupal/core": "8.8.x-dev",
         "drupal/devel": "^1.2",
-        "drupal/facets": "^1.1",
+        "drupal/facets": "^1.4",
         "drupal/facets_pretty_paths": "^1.0@beta",
-        "drupal/search_api": "^1.8",
-        "drupal/search_api_autocomplete": "^1.0",
-        "drupal/search_api_solr": "^2.0",
+        "drupal/search_api": "^1.13",
+        "drupal/search_api_autocomplete": "^1.2",
         "drupal/search_api_sorts": "^1.0@beta",
         "drush/drush": "^9.0.0",
         "oomphinc/composer-installers-extender": "^1.1",
@@ -42,7 +41,7 @@
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
-        "webflo/drupal-core-require-dev": "~8.5.3"
+        "webflo/drupal-core-require-dev": "~8.8"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -74,21 +73,21 @@
     },
     "extra": {
         "installer-paths": {
-            "web/core": [
+            "docroot/core": [
                 "type:drupal-core"
             ],
-            "web/libraries/{$name}": [
+            "docroot/libraries/{$name}": [
                 "type:drupal-library",
                 "vendor:npm-asset",
                 "vendor:bower-asset"
             ],
-            "web/modules/contrib/{$name}": [
+            "docroot/modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
-            "web/profiles/contrib/{$name}": [
+            "docroot/profiles/contrib/{$name}": [
                 "type:drupal-profile"
             ],
-            "web/themes/contrib/{$name}": [
+            "docroot/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ],
             "drush/Commands/{$name}": [
@@ -97,17 +96,18 @@
         },
         "patches": {
             "drupal/core": {
-                "Umami Region Fix for bigpipe to work as expected with facets": "https://www.drupal.org/files/issues/2018-06-06/umami_page_filter-2937640-12.patch"
+                "Umami Region Fix for bigpipe to work as expected with facets": "https://www.drupal.org/files/issues/2019-06-11/2937640-35.patch"
             },
             "drupal/drupal": {
                 "Set the configuration directory for configuration imports": "patches/core-settings-for-import.patch"
             },
             "drupal/facets": {
-                "Hide facets when they are empty and configured to dissapear when empty": "https://www.drupal.org/files/issues/2018-08-06/2984465-reroll.patch"
+                "Hide facets when they are empty and configured to dissapear when empty": "https://www.drupal.org/files/issues/2019-04-08/facets-empty-block-2984465-26.patch",
+                "Summary always shows 1 result. This is committed in dev": "https://www.drupal.org/files/issues/2019-01-30/facets-summary-count-3018847-4.patch"
             },
             "drupal/search_api": {
-                "Embed the excerpt in the view modes of the site": "https://www.drupal.org/files/issues/2018-08-03/2983606-11--entity_excerpt_field.patch",
-                "Create the excerpt even when the query is empty": "https://www.drupal.org/files/issues/2018-07-04/2983640-9.patch"
+                "Embed the excerpt in the view modes of the site": "https://www.drupal.org/files/issues/2018-09-14/2983606-16--entity_excerpt_field.patch",
+                "Create the excerpt even when the query is empty": "https://www.drupal.org/files/issues/2019-05-21/2983640-18.patch"
             }
         },
         "drupal-scaffold": {

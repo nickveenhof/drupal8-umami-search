@@ -1,0 +1,19 @@
+name: umami-update
+recipe: drupal8
+config:
+  php: 7.2
+  via: apache:2.4
+  xdebug: true
+  webroot: docroot
+  drush: ^9
+services:
+  appserver:
+    run:
+      - chmod u+x /app/vendor/bin/drush
+      - chmod u+x chmod u+x /var/www/.composer/vendor/bin/drush
+      - drush cc drush
+  mailhog:
+    type: mailhog
+    portforward: true
+    hogfrom:
+      - appserver
