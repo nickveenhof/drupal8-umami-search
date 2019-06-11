@@ -1,5 +1,9 @@
 #!/bin/sh
+SCRIPT_DIR="$(cd -- "$(dirname "$0")"; pwd -P)"
+DOCROOT="$SCRIPT_DIR/../../docroot"
+cd $SCRIPT_DIR/../../
 
+# D8
 composer install
 cp -R docroot/core/profiles/demo_umami/themes/umami docroot/themes/contrib/
 cp -R docroot/core/profiles/demo_umami/modules/demo_umami_content docroot/modules/contrib/
