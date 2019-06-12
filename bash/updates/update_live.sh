@@ -16,3 +16,4 @@ vendor/bin/drush ev '\Drupal::classResolver()->getInstanceFromDefinition(Drupal\
 vendor/bin/drush search-api:reset-tracker
 vendor/bin/drush search-api:index
 vendor/bin/drush cr
+vendor/bin/drush en config_readonly
