@@ -20,18 +20,6 @@ name: 'Umami Search Index'
 description: ''
 read_only: false
 field_settings:
-  rendered_item:
-    label: 'Rendered HTML output'
-    property_path: rendered_item
-    type: text
-    configuration:
-      roles:
-        anonymous: anonymous
-      view_mode:
-        'entity:node':
-          article: search_index
-          page: search_index
-          recipe: search_index
   field_difficulty:
     label: Difficulty
     datasource_id: 'entity:node'
@@ -72,14 +60,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_recipe_category
-  processed:
-    label: 'Recipe instruction » Processed text'
-    datasource_id: 'entity:node'
-    property_path: 'field_recipe_instruction:processed'
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.field_recipe_instruction
   field_tags:
     label: Tags
     datasource_id: 'entity:node'
@@ -88,6 +68,26 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_tags
+  processed:
+    label: 'Recipe instruction » Processed text'
+    datasource_id: 'entity:node'
+    property_path: 'field_recipe_instruction:processed'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_recipe_instruction
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          article: search_index
+          page: search_index
+          recipe: search_index
   type:
     label: 'Content type'
     datasource_id: 'entity:node'
@@ -102,16 +102,6 @@ datasource_settings:
       default: true
       selected: {  }
 processor_settings:
-  stemmer:
-    all_fields: true
-    fields:
-      - rendered_item
-      - processed
-    exceptions: {  }
-    weights:
-      preprocess_index: 0
-      preprocess_query: 0
-  rendered_item: {  }
   add_url: {  }
   aggregated_field: {  }
   highlight:
@@ -125,22 +115,51 @@ processor_settings:
     suffix: '</strong>'
     weights:
       postprocess_query: 0
-  tokenizer:
+  html_filter:
     all_fields: true
     fields:
-      - rendered_item
+      - field_difficulty
+      - field_ingredients
       - processed
-    spaces: ''
-    overlap_cjk: 1
-    minimum_word_size: '3'
+      - rendered_item
+      - type
+    title: true
+    alt: true
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
     weights:
-      preprocess_index: -6
-      preprocess_query: -6
+      preprocess_index: -15
+      preprocess_query: -15
+  ignorecase:
+    all_fields: true
+    fields:
+      - field_difficulty
+      - field_ingredients
+      - processed
+      - rendered_item
+      - type
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  rendered_item: {  }
+  stemmer:
+    all_fields: true
+    fields:
+      - processed
+      - rendered_item
+    exceptions: {  }
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
   stopwords:
     all_fields: true
     fields:
-      - rendered_item
       - processed
+      - rendered_item
     stopwords:
       - a
       - an
@@ -180,24 +199,24 @@ processor_settings:
     weights:
       preprocess_index: -5
       preprocess_query: -2
-  ignorecase:
+  tokenizer:
     all_fields: true
     fields:
-      - rendered_item
-      - field_difficulty
-      - field_ingredients
       - processed
-      - type
+      - rendered_item
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
     weights:
-      preprocess_index: -20
-      preprocess_query: -20
+      preprocess_index: -6
+      preprocess_query: -6
   transliteration:
     all_fields: true
     fields:
-      - rendered_item
       - field_difficulty
       - field_ingredients
       - processed
+      - rendered_item
       - type
     weights:
       preprocess_index: -20
@@ -212,25 +231,6 @@ processor_settings:
           recipe: !!float 1
     weights:
       preprocess_index: 0
-  html_filter:
-    all_fields: true
-    fields:
-      - rendered_item
-      - field_difficulty
-      - field_ingredients
-      - processed
-      - type
-    title: true
-    alt: true
-    tags:
-      h1: 5
-      h2: 3
-      h3: 2
-      strong: 2
-      b: 2
-    weights:
-      preprocess_index: -15
-      preprocess_query: -15
 tracker_settings:
   default:
     indexing_order: fifo

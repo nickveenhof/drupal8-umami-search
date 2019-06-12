@@ -7,5 +7,4 @@ _core:
 name: 'Recipe category'
 vid: recipe_category
 description: ''
-hierarchy: 0
 weight: 0
