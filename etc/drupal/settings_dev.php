@@ -29,3 +29,5 @@
       if (file_exists(DRUPAL_ROOT . '/../etc/drupal/additional_settings.dev.php')) {
         include DRUPAL_ROOT . '/../etc/drupal/additional_settings.dev.php';
       }
+$config["system.file"]["path"]["temporary"] = "../tmp";
+

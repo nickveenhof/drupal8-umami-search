@@ -52,3 +52,5 @@
       if (file_exists(DRUPAL_ROOT . '/../etc/drupal/additional_settings.live.php')) {
         include DRUPAL_ROOT . '/../etc/drupal/additional_settings.live.php';
       }
+$config["system.file"]["path"]["temporary"] = "../tmp";
+

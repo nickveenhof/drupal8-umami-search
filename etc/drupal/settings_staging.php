@@ -30,3 +30,5 @@
       if (file_exists(DRUPAL_ROOT . '/../etc/drupal/additional_settings.staging.php')) {
         include DRUPAL_ROOT . '/../etc/drupal/additional_settings.staging.php';
       }
+$config["system.file"]["path"]["temporary"] = "../tmp";
+
