@@ -27,13 +27,13 @@
         "drupal/config_installer": "^1.8",
         "drupal/config_readonly": "^1.0@beta",
         "drupal/console": "^1.0.2",
-        "drupal/core": "8.8.x-dev",
-        "drupal/devel": "^1.2",
-        "drupal/facets": "^1.4",
-        "drupal/facets_pretty_paths": "^1.0@beta",
-        "drupal/search_api": "^1.13",
-        "drupal/search_api_autocomplete": "^1.2",
-        "drupal/search_api_sorts": "^1.0@beta",
+        "drupal/core": "8.9.x-dev",
+        "drupal/devel": "^3.0",
+        "drupal/facets": "dev-1.x",
+        "drupal/facets_pretty_paths": "dev-1.x",
+        "drupal/search_api": "dev-1.x",
+        "drupal/search_api_autocomplete": "dev-1.x",
+        "drupal/search_api_sorts": "dev-1.x",
         "drush/drush": "^9.0.0",
         "oomphinc/composer-installers-extender": "^1.1",
         "vlucas/phpdotenv": "^2.4",
@@ -96,17 +96,10 @@
         },
         "patches": {
             "drupal/core": {
-                "Umami Region Fix for bigpipe to work as expected with facets": "https://www.drupal.org/files/issues/2019-06-11/2937640-35.patch"
-            },
-            "drupal/drupal": {
+                "Umami Region Fix for bigpipe to work as expected with facets": "https://www.drupal.org/files/issues/2019-06-11/2937640-35.patch",
                 "Set the configuration directory for configuration imports": "patches/core-settings-for-import.patch"
             },
-            "drupal/facets": {
-                "Hide facets when they are empty and configured to dissapear when empty": "https://www.drupal.org/files/issues/2019-04-08/facets-empty-block-2984465-26.patch",
-                "Summary always shows 1 result. This is committed in dev": "https://www.drupal.org/files/issues/2019-01-30/facets-summary-count-3018847-4.patch"
-            },
             "drupal/search_api": {
-                "Embed the excerpt in the view modes of the site": "https://www.drupal.org/files/issues/2018-09-14/2983606-16--entity_excerpt_field.patch",
                 "Create the excerpt even when the query is empty": "https://www.drupal.org/files/issues/2019-05-21/2983640-18.patch"
             }
         },
