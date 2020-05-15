@@ -52,12 +52,13 @@
       if (file_exists(DRUPAL_ROOT . '/../etc/drupal/additional_settings.live.php')) {
         include DRUPAL_ROOT . '/../etc/drupal/additional_settings.live.php';
       }
-$config["system.file"]["path"]["temporary"] = "../tmp";
 
-// BEGIN reverse proxy setting added by Dropsolid infrastructure, DO NOT EDIT
-// Tell Drupal that we are behind a reverse proxy server
-$settings['reverse_proxy'] = TRUE;
+      $config["system.file"]["path"]["temporary"] = "../tmp";
 
-// List of trusted IPs (IP numbers of our reverse proxies)
-$settings['reverse_proxy_addresses'] = ['127.0.0.1', '35.187.168.7', '104.199.104.19', '35.195.110.3'];
-// END reverse proxy setting added by Dropsolid infrastructure, DO NOT EDIT
+      // BEGIN reverse proxy setting added by Dropsolid infrastructure, DO NOT EDIT
+      // Tell Drupal that we are behind a reverse proxy server
+      $settings['reverse_proxy'] = TRUE;
+
+      // List of trusted IPs (IP numbers of our reverse proxies)
+      $settings['reverse_proxy_addresses'] = ['127.0.0.1', '35.187.168.7', '104.199.104.19', '35.195.110.3'];
+      // END reverse proxy setting added by Dropsolid infrastructure, DO NOT EDIT
