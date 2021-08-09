@@ -2565,12 +2565,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "7fc61992160a7d062b54894379dfa90f96985331"
+                "reference": "7e60f26a593321d2e8f941eadf437cc1175e8167"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/7fc61992160a7d062b54894379dfa90f96985331",
-                "reference": "7fc61992160a7d062b54894379dfa90f96985331",
+                "url": "https://api.github.com/repos/drupal/core/zipball/7e60f26a593321d2e8f941eadf437cc1175e8167",
+                "reference": "7e60f26a593321d2e8f941eadf437cc1175e8167",
                 "shasum": ""
             },
             "require": {
@@ -2597,7 +2597,7 @@
                 "laminas/laminas-diactoros": "^1.8",
                 "laminas/laminas-feed": "^2.12",
                 "masterminds/html5": "^2.1",
-                "pear/archive_tar": "^1.4.12",
+                "pear/archive_tar": "^1.4.14",
                 "php": "^7.0.8",
                 "psr/log": "^1.0",
                 "stack/builder": "^1.0",
@@ -2791,7 +2791,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2021-04-22T16:19:35+00:00"
+            "time": "2021-08-02T13:16:57+00:00"
         },
         {
             "name": "drupal/ctools",
@@ -2814,7 +2814,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-3.4",
-                    "datestamp": "1585763383",
+                    "datestamp": "1620838181",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2987,8 +2987,8 @@
                     "dev-8.x-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.7+9-dev",
-                    "datestamp": "1616143145",
+                    "version": "8.x-1.7+11-dev",
+                    "datestamp": "1620808354",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3234,7 +3234,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1618741964",
+                    "datestamp": "1628231254",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3297,8 +3297,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.4+5-dev",
-                    "datestamp": "1601211518",
+                    "version": "8.x-1.5+1-dev",
+                    "datestamp": "1626685014",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4573,16 +4573,16 @@
         },
         {
             "name": "pear/archive_tar",
-            "version": "1.4.13",
+            "version": "1.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/Archive_Tar.git",
-                "reference": "2b87b41178cc6d4ad3cba678a46a1cae49786011"
+                "reference": "4d761c5334c790e45ef3245f0864b8955c562caa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/2b87b41178cc6d4ad3cba678a46a1cae49786011",
-                "reference": "2b87b41178cc6d4ad3cba678a46a1cae49786011",
+                "url": "https://api.github.com/repos/pear/Archive_Tar/zipball/4d761c5334c790e45ef3245f0864b8955c562caa",
+                "reference": "4d761c5334c790e45ef3245f0864b8955c562caa",
                 "shasum": ""
             },
             "require": {
@@ -4645,7 +4645,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-02-16T10:50:50+00:00"
+            "time": "2021-07-20T13:53:39+00:00"
         },
         {
             "name": "pear/console_getopt",
@@ -10271,12 +10271,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webflo/drupal-core-require-dev.git",
-                "reference": "e00e24ddce981d4c42f78e15146d9558800f1cdd"
+                "reference": "34dc5b69467d0495acb112c49abaa110a4240a36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-require-dev/zipball/e00e24ddce981d4c42f78e15146d9558800f1cdd",
-                "reference": "e00e24ddce981d4c42f78e15146d9558800f1cdd",
+                "url": "https://api.github.com/repos/webflo/drupal-core-require-dev/zipball/34dc5b69467d0495acb112c49abaa110a4240a36",
+                "reference": "34dc5b69467d0495acb112c49abaa110a4240a36",
                 "shasum": ""
             },
             "require": {
@@ -10308,7 +10308,7 @@
             ],
             "description": "require-dev dependencies from drupal/core",
             "abandoned": "drupal/core-dev",
-            "time": "2021-04-21T17:02:30+00:00"
+            "time": "2021-07-21T17:02:27+00:00"
         }
     ],
     "aliases": [],
